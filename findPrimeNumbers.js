@@ -3,7 +3,7 @@ This is my first working code attempt that finds prime numbers.
 NOTE: My code will only work for the prime numbers found between 0 and 200 (the first 46 prime numbers) 
 *I am aware there is definitely a better way to do accomplish this, but at least my code works.
 
-The idea that tried to follow is that is from this list:
+The idea that tried to follow is explained in this list (following Sieve of Eratosthenes' algorithim):
 Prime Number: Prime numbers are numbers greater than 1, and are only divisible by itself and 1 (Has 1 and itself as factors eg. 2, 3, 7, 11)
 1. Prime numebers can't be perfect squares (eg. 1, 4, 9, 16, 36, and so on) 
 2. Even number can't be prime number or divisible by 2 (except 2)
