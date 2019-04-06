@@ -12,7 +12,7 @@ for (var counter = 0; counter <= 100; counter++){           //Sets up the counte
             not_prime = true;                               
             }
         }
-                                                                
+                                                                        
         if (not_prime === false){                           //If after going through all the numbers between 2 and one less than the number and none of them were evenly divided (no remainder) not_prime will still be false and the console will print the number.       
             console.log(counter);
         }
