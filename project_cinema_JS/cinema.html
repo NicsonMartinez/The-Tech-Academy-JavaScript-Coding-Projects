@@ -191,20 +191,77 @@
 				</div>
 			</div>
 			<!-- /showtimes -->
+
+			<!-- Jumbotron heading-->
+			<div class = "jumbotron-fluid bg-info mt-5 pt-5 pb-5 text-center">
+					<div class = "container">
+							<h1 class = "display-4 hidden-sm-down" style = "color:#fff;font-family:roboto;font-weight:900;text-transform:uppercase;" >Movie Deals</h1>
+							<p class ="lead">Check out our monthly deals...</p>
+							<!-- movie deals -->
+							<button type="button" class = "btn btn-outline-primary" data-toggle="modal" data-target="#register">See our monthly movie deals!</button>
+							<!-- /movie deals -->
+ 					</div>
+			</div>
+			<!-- /Jumbotron heading-->
 		
-			<!-- sign up -->
-			<div class="container py-4 text-center col-md-6">
-				<form>
-					<div class="form-group row">
-						<h1 class="display-5 my-5 text-primary">Stay current on the movies!</h1>
-						<div class="col-sm-12">
-							<input type="email" class="form-control form-control-lg mr-auto" id="lgFormGroupInput" placeholder="you@example.com">
-							<button type="button" class="btn btn-outline-primary mt-4 mr-auto">Sign up!</button>
+			<!-- sign up form -->
+			<div calss="row">
+				<div class="container text-center col-md-6" id="deals">
+					<div class = "container text-center">
+							<h1 class="display-5 my-4 col-lg-auto text-primary">Stay current on the movies!</h1>
+							<div class="input-group mb-5 input-group-sm">
+								<input type="email" class="form-control form-control-lg mr-auto" id="lgFormGroupInput" placeholder="you@example.com">
+								<span class="input-group-btn">
+										<button type="button" class="btn btn-secondary btn-outline-info popover-dismiss" data-container="body" data-toggle="popover" data-placement="top" data-content="Submit your email to receive great movie reward deals!">
+												Sign up!
+										</button>
+								</span>
+							</div>
+					</div>
+				</div>
+			<div>
+			<!-- /sign up form-->
+
+			<!-- form modal -->
+			<div class="modal" tabindex="-1" role="dialog" id="register">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Register to receive movie deals...</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+
+							<form>
+									<fieldset class="form-group">
+											<label form="firstname">First Name:</label>
+											<input type="text" class="form-control" id="firstname" placeholder="First Name...">
+									</fieldset>
+									<fieldset class="form-group">
+											<label form="lastname">Last Name:</label>
+											<input type="text" class="form-control" id="lastname" placeholder="Last Name...">
+									</fieldset>
+									<fieldset class="form-group">
+											<label form="email">Email:</label>
+											<input type="email" class="form-control" id="email" placeholder="Email...">
+									</fieldset>
+									<fieldset class="form-group">
+											<label form="password">Password:</label>
+											<input type="password" class="form-control" id="password" placeholder="Password...">
+									</fieldset>
+							</form>
+
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-primary">Save changes</button>
+								<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+							</div>
 						</div>
 					</div>
-				</form>
 			</div>
-			<!-- /sign up -->
+			<!-- /form modal -->
 		
 			<!-- footer -->
 			<div class="container">
@@ -231,5 +288,14 @@
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-  </body>
+		
+		<script>
+				$('.popover-dismiss').popover({
+					trigger: 'focus'
+				})
+
+		</script>
+
+
+	</body>
 </html>
