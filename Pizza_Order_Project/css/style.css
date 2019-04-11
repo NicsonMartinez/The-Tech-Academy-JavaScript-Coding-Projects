@@ -1,0 +1,26 @@
+
+body{
+    background: url('../images/background.jpg');
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#header {
+    border-radius: 0px 0px 10px 10px;
+}
+
+svg{
+    color: rgb(255, 208, 0);
+}
+
+#prices {
+    background-color: rgba(117, 1, 30, 0.555);
+    border-radius: 10px;
+}
+
+#pricesContainer{
+    background-color: rgba(128, 53, 0, 0.781);
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+

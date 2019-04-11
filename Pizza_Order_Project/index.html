@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>PIZZA!!</title>
+</head>
+<body>
+
+    <!-- Full Page Container -->
+    <div class="container">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+            <a class="navbar-brand text-warning" href="#">PIZZA!!</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="navbar-brand text-warning"  href="#">HOME <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+                <div>
+                    <svg width="30" height="30" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="pizza-slice" class="svg-inline--fa fa-pizza-slice fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path fill="currentColor" d="M158.87.15c-16.16-1.52-31.2 8.42-35.33 24.12l-14.81 56.27c187.62 5.49 314.54 130.61 322.48 317l56.94-15.78c15.72-4.36 25.49-19.68 23.62-35.9C490.89 165.08 340.78 17.32 158.87.15zm-58.47 112L.55 491.64a16.21 16.21 0 0 0 20 19.75l379-105.1c-4.27-174.89-123.08-292.14-299.15-294.1zM128 416a32 32 0 1 1 32-32 32 32 0 0 1-32 32zm48-152a32 32 0 1 1 32-32 32 32 0 0 1-32 32zm104 104a32 32 0 1 1 32-32 32 32 0 0 1-32 32z"></path>
+                    </svg>
+                </div>
+            </div>
+        </nav>
+        <!-- /Navbar -->
+
+        <!-- Jumbotron -->
+        
+        <div id="header" class="jumbotron jumbotron-fluid bg-warning">
+            <div class="container">
+                <h1 class="display-2 text-danger">What do you want? 😊 🍕</h1>
+                <h3 class="lead text-danger">You know pizza is the best food in the world so go ahead and ORDER!!!!</h3>
+            </div>
+        </div>
+        
+        <!-- /Jumbotron -->
+
+        <!-- Prices Container -->
+        <div class="container text-light lead" id="pricesContainer">
+            BASE PIZZA PRICE BEFORE INGREDIENT MODIFICATIONS:
+            <table class="table table-striped table-dark" id="prices">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Size</th>
+                        <th scope="col">Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Personal Pizza</td>
+                        <td>$6.00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Medium Pizza</td>
+                        <td>$10.00</td>
+                        
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Large Pizza</td>
+                        <td>$14.00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>XLarge Pizza</td>
+                        <td>$16.00</td>
+                    </tr>
+                </tbody>
+            </table>
+            INGREDIENT MODIFIER PRICING: <br>
+            The following ingredients if selected will be added to the base pizza price:<br><br>
+            Additional Meat items (first one is complimentary):<br>
+            ➤ +$1.00 each additional meat items beyond the first complimentary meat item.<br><br>
+            Additional Veggie items (first one is complimentary):<br>
+            ➤ +$1.00 each additional veggie items beyond the first complimentary veggie item.<br><br>
+            Extra Cheese:<br>
+            ➤ +$3.00 for any size pizza   
+            Crust:<br>
+            ➤ +$3.00 for Cheese Stuffed Crust. All other crusts are complimentary.<br>
+        </div>
+        <!-- /Prices Container -->
+              
+
+                
+
+        <!-- /Card Group -->
+        <div class="card-group">
+
+            <!-- Card 1 -->
+            <div class="card">
+                <div class="card border-danger mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Size Selection</div>
+                    <div class="card-body text-danger">
+                        <h5 class="card-title">Please select the size: </h5>
+                        <p class="card-text">- Choose one</p>
+
+                        <!-- Size Options Radio -->
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="size" id="Personal Pizza" value="Personal Pizza" checked>
+                            <label class="form-check-label" for="Personal Pizza">
+                                Personal
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="size" id="Medium Pizza" value="Medium Pizza" checked>
+                            <label class="form-check-label" for="Medium Pizza">
+                                Medium
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="size" id="Large Pizza" value="Large Pizza" checked>
+                            <label class="form-check-label" for="Large Pizza">
+                                Large
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="size" id="Extra Large Pizza" value="Extra Large Pizza" checked>
+                            <label class="form-check-label" for="Extra Large Pizza">
+                                Extra Large
+                            </label>
+                        </div>
+                        <!-- /Size Options Radio -->
+
+                    </div>
+                </div>    
+            </div>
+            <!-- /Card 1 -->
+
+            <!-- Card 2 -->
+            <div class="card">
+                <div class="card border-danger mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Meat Selection</div>
+                    <div class="card-body text-danger">
+                        <h5 class="card-title">Please select the size: </h5>
+                        <p class="card-text">- You can choose more than one</p>
+
+                        <!-- Meats Options Checkbox -->
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="Pepperoni" value="Pepperoni">
+                            <label class="form-check-label" for="Pepperoni">
+                                Pepperoni
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="Sausage" value="Sausage">
+                            <label class="form-check-label" for="Sausage">
+                                Sausage
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="Canadian Bacon" value="Canadian Bacon">
+                            <label class="form-check-label" for="Canadian Bacon">
+                                Canadian Bacon
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="Ground Beef" value="Ground Beef">
+                            <label class="form-check-label" for="Ground Beef">
+                                Ground Beef
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="Anchovy" value="Anchovy">
+                            <label class="form-check-label" for="Anchovy">
+                                Anchovy
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="Chicken" value="Chicken">
+                            <label class="form-check-label" for="Chicken">
+                                Chicken
+                            </label>
+                        </div>
+                        <!-- /Meats Options Checkbox -->
+
+                    </div>
+                </div>    
+            </div>
+            <!-- /Card 2 -->
+
+            <!-- Card 3 -->
+            <div class="card">
+                <div class="card border-danger mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Size Selection</div>
+                    <div class="card-body text-danger">
+                        <h5 class="card-title">Please select the size: </h5>
+                        <p class="card-text">- Choose one</p>
+
+                        <!-- Size Options Radio -->
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="size" id="Personal Pizza" value="Personal Pizza" checked>
+                            <label class="form-check-label" for="Personal Pizza">
+                                Personal
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="size" id="Medium Pizza" value="Medium Pizza" checked>
+                            <label class="form-check-label" for="Medium Pizza">
+                                Medium
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="size" id="Large Pizza" value="Large Pizza" checked>
+                            <label class="form-check-label" for="Large Pizza">
+                                Large
+                            </label>
+                        </div>
+                        <!-- /Size Options Radio -->
+
+                    </div>
+                </div>    
+            </div>
+            <!-- /Card 3 -->
+
+
+
+
+        </div>
+        <!-- /Card Group -->
+
+    </div>
+    <!-- Full Page Container -->
+            
+        
+        
+    
+    
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
