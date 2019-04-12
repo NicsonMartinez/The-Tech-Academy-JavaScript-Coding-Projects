@@ -24,3 +24,16 @@ svg{
     margin-bottom: 30px;
 }
 
+.card{
+    /* made it transparent*/
+    background-color: rgba(128, 53, 0, 0); 
+}
+
+#controls {
+    margin-bottom: 50px;
+}
+
+#footerImage {
+    height: 100px;
+    width: 100%;
+}
