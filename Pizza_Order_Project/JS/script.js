@@ -1,0 +1,8 @@
+
+getReceipt(){
+
+}
+
+clearAll(){
+    
+}
