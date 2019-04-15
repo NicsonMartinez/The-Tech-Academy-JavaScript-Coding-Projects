@@ -18,7 +18,7 @@ svg{
     border-radius: 10px;
 }
 
-#pricesContainer{
+#pricesContainer, #formContainer{
     background-color: rgba(128, 53, 0, 0.781);
     border-radius: 10px;
     margin-bottom: 30px;
@@ -30,10 +30,22 @@ svg{
 }
 
 #controls {
-    margin-bottom: 50px;
+    margin-bottom: px;
 }
 
 #footerImage {
     height: 100px;
     width: 100%;
+}
+
+#home {
+    margin-top: 30px;
+}
+
+#receiptId{
+    background-color: rgba(117, 1, 30, 0.781);
+    border-radius: 10px;
+    height: 300px;
+    width: 50%;
+    margin-bottom: 30px;
 }

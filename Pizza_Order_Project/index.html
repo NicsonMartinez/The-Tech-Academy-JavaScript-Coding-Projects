@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Local CSS -->
     <link rel="stylesheet" href="./css/style.css">
-    <link 
+    
     <title>PIZZA!!</title>
 </head>
 <body>
@@ -42,14 +42,12 @@
         <!-- /Navbar -->
 
         <!-- Jumbotron -->
-        
         <div id="header" class="jumbotron jumbotron-fluid bg-warning">
             <div class="container">
                 <h1 class="display-2 text-danger">What chu want tho? 🤴🏾 🍕</h1>
                 <h3 class="lead text-danger" id="section1">You know pizza is the best food in the world so go ahead and ORDER!!!!</h3>
             </div>
         </div>
-        
         <!-- /Jumbotron -->
 
         <!-- Prices Container -->
@@ -101,9 +99,9 @@
         <!-- /Prices Container -->
               
         <!-- Form -->    
-        <div class="text-light" id="pricesContainer"> 
+        <div class="text-light" id="formContainer"> 
             <h6 class="lead">To order, please select from the following!</h6> 
-            <form >
+            <form id="form" >
 
                 <!-- /Card Group -->
                 <div class="card-group">
@@ -118,29 +116,29 @@
 
                                 <!-- Size Options Radio -->
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="size" id="Personal_Pizza" value="Personal_Pizza" checked>
-                                    <label class="form-check-label" for="Personal_Pizza">
+                                    <input class="size" class="form-check-input" type="radio" name="size" value="Personal_Pizza" checked>
+                                    <label class="form-check-label">
                                         Personal
                                     </label>
                                 </div>
 
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="size" id="Medium_Pizza" value="Medium_Pizza">
-                                    <label class="form-check-label" for="Medium_Pizza">
+                                    <input class="size" class="form-check-input" type="radio" name="size" value="Medium_Pizza">
+                                    <label class="form-check-label">
                                         Medium
                                     </label>
                                 </div>
 
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="size" id="Large_Pizza" value="Large_Pizza">
-                                    <label class="form-check-label" for="Large_Pizza">
+                                    <input class="size" class="form-check-input" type="radio" name="size" value="Large_Pizza">
+                                    <label class="form-check-label">
                                         Large
                                     </label>
                                 </div>
 
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="size" id="Extra_Large_Pizza" value="Extra_Large_Pizza">
-                                    <label class="form-check-label" for="Extra_Large_Pizza">
+                                    <input class="size" class="form-check-input" type="radio" name="size" value="Extra_Large_Pizza">
+                                    <label class="form-check-label">
                                         Extra Large
                                     </label>
                                 </div>
@@ -152,6 +150,135 @@
                     <!-- /Card 1 -->
 
                     <!-- Card 2 -->
+                    <div class="card">
+                        <div class="card border-secondary mb-3 bg-warning" style="max-width: 18rem;">
+                            <div class="card-header bg-danger text-light">CRUST 🥖</div>
+                            <div class="card-body text-danger">
+                                <h5 class="card-title">Please select Crust Preference: </h5>
+                                <p class="card-text">- Choose one</p>
+
+                                <!-- Crust Options Radio -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="crust" id="Plain_Crust" value="Plain_Crust" checked>
+                                    <label class="form-check-label" for="Plain_Crust">
+                                        Plain Crust
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="crust" id="Garlic_Butter_Crust" value="Garlic_Butter_Crust">
+                                    <label class="form-check-label" for="Garlic_Butter_Crust">
+                                        Garlic Butter Crust
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="crust" id="Cheese_Stuffed_Crust" value="Cheese_Stuffed_Crust">
+                                    <label class="form-check-label" for="Cheese_Stuffed_Crust">
+                                        Cheese Stuffed Crust
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="crust" id="Spicy_Crust" value="Spicy_Crust">
+                                    <label class="form-check-label" for="Spicy_Crust">
+                                        Spicy Crust
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="crust" id="House_Special_Crust" value="House_Special_Crust">
+                                    <label class="form-check-label" for="House_Special_Crust">
+                                        House Special Crust
+                                    </label>
+                                </div>
+                                <!-- /Crust Options Radio -->
+                
+                            </div>
+                        </div>    
+                    </div>
+                    <!-- /Card 2 -->
+
+                    <!-- Card 3 -->
+                    <div class="card">
+                        <div class="card border-secondary mb-3 bg-warning" style="max-width: 18rem;">
+                            <div class="card-header bg-danger text-light">SAUCE 🍝</div>
+                            <div class="card-body text-danger">
+                                <h5 class="card-title">Please select Sauce Preference: </h5>
+                                <p class="card-text">- Choose one</p>
+
+                                <!-- Crust Options Radio -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="sauce" id="Marinara_sauce" value="Marinara_sauce" checked>
+                                    <label class="form-check-label" for="Marinara_sauce">
+                                        Marinara sauce
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="sauce" id="White_sauce" value="White_sauce">
+                                    <label class="form-check-label" for="White_sauce">
+                                        White sauce
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="sauce" id="Barbeque_sauce" value="Barbeque_sauce">
+                                    <label class="form-check-label" for="Barbeque_sauce">
+                                        Barbeque sauce
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="sauce" id="No_Sauce" value="No_Sauce">
+                                    <label class="form-check-label" for="No_Sauces">
+                                        No Sauce
+                                    </label>
+                                </div>
+                                <!-- /Crust Options Radio -->
+                
+                            </div>
+                        </div>    
+                    </div>
+                    <!-- /Card 3 -->
+
+                    <!-- Card 4 -->
+                    <div class="card">
+                        <div class="card border-secondary mb-3 bg-warning" style="max-width: 18rem;">
+                            <div class="card-header bg-danger text-light">CHEESE 🧀</div>
+                            <div class="card-body text-danger">
+                                <h5 class="card-title">Please select Cheese Preference: </h5>
+                                <p class="card-text">- Choose one</p>
+
+                                <!-- Cheese Options Radio -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="cheese" id="Regular" value="Regular" checked>
+                                    <label class="form-check-label" for="Regular">
+                                        Regular
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="cheese" id="No_cheese" value="No_cheese">
+                                    <label class="form-check-label" for="No_cheese">
+                                        No  Cheese
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="cheese" id="Extra_Cheese" value="Extra_Cheese">
+                                    <label class="form-check-label" for="Extra_Cheese">
+                                        Extra Cheese
+                                    </label>
+                                </div>
+                                <!-- /Cheese Options Radio -->
+
+                            </div>
+                        </div>    
+                    </div>
+                    <!-- /Card 4 -->
+
+                    <!-- Card 5 -->
                     <div class="card">
                         <div class="card border-secondary mb-3 form-group-row bg-warning" style="max-width: 18rem;">
                             <div class="card-header bg-danger text-light">MEAT 🥩</div>
@@ -206,135 +333,6 @@
                             </div>
                         </div>    
                     </div>
-                    <!-- /Card 2 -->
-
-                    <!-- Card 3 -->
-                    <div class="card">
-                        <div class="card border-secondary mb-3 bg-warning" style="max-width: 18rem;">
-                            <div class="card-header bg-danger text-light">CHEESE 🧀</div>
-                            <div class="card-body text-danger">
-                                <h5 class="card-title">Please select Cheese Preference: </h5>
-                                <p class="card-text">- Choose one</p>
-
-                                <!-- Cheese Options Radio -->
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="cheese" id="Regular" value="Regular" checked>
-                                    <label class="form-check-label" for="Regular">
-                                        Regular
-                                    </label>
-                                </div>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="cheese" id="No_cheese" value="No_cheese">
-                                    <label class="form-check-label" for="No_cheese">
-                                        No  Cheese
-                                    </label>
-                                </div>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="cheese" id="Extra_Cheese" value="Extra_Cheese">
-                                    <label class="form-check-label" for="Extra_Cheese">
-                                        Extra Cheese
-                                    </label>
-                                </div>
-                                <!-- /Cheese Options Radio -->
-
-                            </div>
-                        </div>    
-                    </div>
-                    <!-- /Card 3 -->
-
-                    <!-- Card 4 -->
-                    <div class="card">
-                        <div class="card border-secondary mb-3 bg-warning" style="max-width: 18rem;">
-                            <div class="card-header bg-danger text-light">CRUST 🥖</div>
-                            <div class="card-body text-danger">
-                                <h5 class="card-title">Please select Crust Preference: </h5>
-                                <p class="card-text">- Choose one</p>
-
-                                <!-- Crust Options Radio -->
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="crust" id="Plain_Crust" value="Plain_Crust" checked>
-                                    <label class="form-check-label" for="Plain_Crust">
-                                        Plain Crust
-                                    </label>
-                                </div>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="crust" id="Garlic_Butter_Crust" value="Garlic_Butter_Crust">
-                                    <label class="form-check-label" for="Garlic_Butter_Crust">
-                                        Garlic Butter Crust
-                                    </label>
-                                </div>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="crust" id="Cheese_Stuffed_Crust" value="Cheese_Stuffed_Crust">
-                                    <label class="form-check-label" for="Cheese_Stuffed_Crust">
-                                        Cheese Stuffed Crust
-                                    </label>
-                                </div>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="crust" id="Spicy_Crust" value="Spicy_Crust">
-                                    <label class="form-check-label" for="Spicy_Crust">
-                                        Spicy Crust
-                                    </label>
-                                </div>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="crust" id="House_Special_Crust" value="House_Special_Crust">
-                                    <label class="form-check-label" for="House_Special_Crust">
-                                        House Special Crust
-                                    </label>
-                                </div>
-                                <!-- /Crust Options Radio -->
-                
-                            </div>
-                        </div>    
-                    </div>
-                    <!-- /Card 4 -->
-
-                    <!-- Card 5 -->
-                    <div class="card">
-                        <div class="card border-secondary mb-3 bg-warning" style="max-width: 18rem;">
-                            <div class="card-header bg-danger text-light">SAUCE 🍝</div>
-                            <div class="card-body text-danger">
-                                <h5 class="card-title">Please select Sauce Preference: </h5>
-                                <p class="card-text">- Choose one</p>
-
-                                <!-- Crust Options Radio -->
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="sauce" id="Marinara_sauce" value="Marinara_sauce" checked>
-                                    <label class="form-check-label" for="Marinara_sauce">
-                                        Marinara sauce
-                                    </label>
-                                </div>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="sauce" id="White_sauce" value="White_sauce">
-                                    <label class="form-check-label" for="White_sauce">
-                                        White sauce
-                                    </label>
-                                </div>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="sauce" id="Barbeque_sauce" value="Barbeque_sauce">
-                                    <label class="form-check-label" for="Barbeque_sauce">
-                                        Barbeque sauce
-                                    </label>
-                                </div>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="sauce" id="No_Sauce" value="No_Sauce">
-                                    <label class="form-check-label" for="No_Sauces">
-                                        No Sauce
-                                    </label>
-                                </div>
-                                <!-- /Crust Options Radio -->
-                
-                            </div>
-                        </div>    
-                    </div>
                     <!-- /Card 5 -->
 
                     <!-- Card 6 -->
@@ -347,56 +345,56 @@
 
                                 <!-- Meats Options Checkbox -->
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="meat" id="Tomatoes" value="Tomatoes">
+                                    <input class="form-check-input" type="checkbox" name="veggies" id="Tomatoes" value="Tomatoes">
                                     <label class="form-check-label" for="Tomatoes">
                                         Tomatoes
                                     </label>
                                 </div>
 
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="meat" id="Onions" value="Onions">
+                                    <input class="form-check-input" type="checkbox" name="veggies" id="Onions" value="Onions">
                                     <label class="form-check-label" for="Onions">
                                         Onions
                                     </label>
                                 </div>
 
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="meat" id="Olives" value="Olives">
+                                    <input class="form-check-input" type="checkbox" name="veggies" id="Olives" value="Olives">
                                     <label class="form-check-label" for="Olives">
                                         Olives
                                     </label>
                                 </div>
 
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="meat" id="Green_Peppers" value="Green_Peppers">
+                                    <input class="form-check-input" type="checkbox" name="veggies" id="Green_Peppers" value="Green_Peppers">
                                     <label class="form-check-label" for="Green_Peppers">
                                         Green_Peppers
                                     </label>
                                 </div>
 
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="meat" id="Mushrooms" value="Mushrooms">
+                                    <input class="form-check-input" type="checkbox" name="veggies" id="Mushrooms" value="Mushrooms">
                                     <label class="form-check-label" for="Mushrooms">
                                         Mushrooms
                                     </label>
                                 </div>
 
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="meat" id="Pineapple" value="Pineapple">
+                                    <input class="form-check-input" type="checkbox" name="veggies" id="Pineapple" value="Pineapple">
                                     <label class="form-check-label" for="Pineapple">
                                         Pineapple
                                     </label>
                                 </div>
 
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="meat" id="Spinach" value="Spinach">
+                                    <input class="form-check-input" type="checkbox" name="veggies" id="Spinach" value="Spinach">
                                     <label class="form-check-label" for="Spinach">
                                         Spinach
                                     </label>
                                 </div>
 
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="meat" id="Jalapeno" value="Jalapeno">
+                                    <input class="form-check-input" type="checkbox" name="veggies" id="Jalapeno" value="Jalapeno">
                                     <label class="form-check-label" for="Jalapeno">
                                         Jalapeno
                                     </label>
@@ -419,7 +417,7 @@
                     </div>
 
                     <div class="col-sm-6">
-                        <button type="button" onclick="clearAll()" class="btn btn-danger btn-lg btn-block">Cancel</button>
+                        <button type="button" onclick="clearAll()"  class="btn btn-danger btn-lg btn-block">Cancel</button>
                     </div>
 
                 </div>
@@ -428,6 +426,19 @@
             </form>
         </div>    
         <!-- /Form -->
+
+        <!-- Receipt -->
+        <div class="container lead text-light" id="receiptId">
+            
+            <h2>Your Receipt:</h2>
+
+            <div id="showText"></div>
+            <div id="totalPrice"></div>
+          
+
+        </div>      
+        <!-- /Receipt -->
+
 
         <!-- footer -->
         <div class="card mb-3" id="footerImage">
