@@ -3,12 +3,9 @@ function getReceipt(){
     var orderTotal = 0;
     var sizeTotal = 0;
     var sizeArray = document.getElementsByClassName("size");
-    console.log(sizeArray);
     for (var i = 0; i < sizeArray.length; i++){
         if (sizeArray[i].checked){
-            console.log(sizeArray[i].value);
-            var selectedSize = sizeArray[i].Value;
-            console.log(selectedSize); //Why does this return unidentified..?
+            var selectedSize = sizeArray[i].value;
             fullText = fullText+selectedSize+"<br>"; 
         }
     }
@@ -22,7 +19,7 @@ function getReceipt(){
         sizeTotal = 16;
     }
     orderTotal = sizeTotal;
-    //console.log(selectedSize+" = $"+sizeTotal+".00");
-	//console.log("size text1: "+fullText);
-	//console.log("subtotal: $"+orderTotal+".00");
-}
+    console.log(selectedSize+" = $"+sizeTotal+".00");
+	console.log("size text1: "+fullText);
+	console.log("subtotal: $"+orderTotal+".00");
+};
