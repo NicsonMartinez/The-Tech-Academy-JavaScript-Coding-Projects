@@ -43,9 +43,11 @@ svg{
 }
 
 #receiptId{
-    background-color: rgba(117, 1, 30, 0.781);
+    opacity: 0;
+    background-color: rgba(117, 1, 30, 0.863);
     border-radius: 10px;
-    height: 300px;
-    width: 50%;
+    display: flex;
+    /*height: 300px;
+    width: 50%;*/
     margin-bottom: 30px;
 }
